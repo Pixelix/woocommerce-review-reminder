@@ -29,6 +29,11 @@ class WC_Review_Reminder_Admin {
 
 		// Register settings.
 		add_action( 'admin_init', array( $this, 'register_settings' ) );
+
+		// Test with WooCommerce is activated.
+		if ( ! class_exists( 'WooCommerce' ) ) {
+			add_action( 'admin_notices', array( $this, 'woocommerce_is_missing_notice' ) );
+		}
 	}
 
 	/**
@@ -105,7 +110,6 @@ class WC_Review_Reminder_Admin {
 		include_once( 'views/html-admin-settings.php' );
 	}
 
-
 	/**
 	 * Register the plugin settings.
 	 *
@@ -116,5 +120,14 @@ class WC_Review_Reminder_Admin {
 		register_setting( 'wcrr_options', 'mailer_email' );
 		register_setting( 'wcrr_options', 'interval_count' );
 		register_setting( 'wcrr_options', 'interval_type' );
+	}
+
+	/**
+	 * WooCommerce missing notice.
+	 *
+	 * @return string Admin notice.
+	 */
+	public function woocommerce_is_missing_notice() {
+		echo '<div class="error"><p>' . sprintf( __( '<strong>WooCommerce Review Reminder</strong> depends on the last version of %s to work!', $this->plugin_slug ), '<a href="http://wordpress.org/extend/plugins/woocommerce/" target="_blank">' . __( 'WooCommerce', $this->plugin_slug ) . '</a>' ) . '</p></div>';
 	}
 }
