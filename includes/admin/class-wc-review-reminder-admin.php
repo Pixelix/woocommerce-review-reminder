@@ -84,15 +84,15 @@ class WC_Review_Reminder_Admin {
 			array(
 				'id'      => 'wcrr_configuring_help_tab',
 				'title'   => __( 'Configuring plugin', $this->plugin_slug ),
-				'content' => '<p>' . __( 'You can ask your plugin settings. If any of the fields will be empty, the default value is used.', $this->plugin_slug  ) . '</p>',
+				'content' => '<p>' . __( 'Fill in the plugin options. If you leave any field blank the notificaçãos will be sent in a week.', $this->plugin_slug  ) . '</p>',
 			)
 		);
 
 		$screen->add_help_tab(
 			array(
-				'id'      => 'wcrr_unspecified_help_tab',
-				'title'   => __( 'Unspecified values', $this->plugin_slug ),
-				'content' => '<p>' . __( 'As the address and name of the recipient takes all the data, which the buyer indicated in the payment order information.', $this->plugin_slug ) . '</p>',
+				'id'      => 'wcrr_email_help_tab',
+				'title'   => __( 'Email standards', $this->plugin_slug ),
+				'content' => '<p>' . __( 'The WooCommerce email standards will be used to send all notifications.', $this->plugin_slug ) . '</p>',
 			)
 		);
 
