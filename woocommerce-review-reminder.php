@@ -1,15 +1,16 @@
 <?php
-
 /*
-* Plugin Name: WooCommerce Review Reminder
-* Description: Reminder to leave feedback about a purchase.
-* Version: 1.1
-* Author: Pixelix
-* Author URI: http://pixelix.ru
-* License: GPL2
-* Text Domain: woocommerce-review-reminder
-* Domain Path: /lang/
-*/
+ * Plugin Name: WooCommerce Review Reminder
+ * Plugin URI: http://wordpress.org/plugins/woocommerce-review-reminder/
+ * Description: Reminder to leave feedback about a purchase.
+ * Version: 1.1
+ * Author: Pixelix
+ * Author URI: http://pixelix.ru
+ * License: GPLv2
+ * License URI: ttp://www.gnu.org/licenses/gpl-2.0.txt
+ * Text Domain: woocommerce-review-reminder
+ * Domain Path: /lang/
+ */
 
 function wcrr_init() {
 	load_plugin_textdomain( 'woocommerce-review-reminder', false, dirname( plugin_basename( __FILE__ ) ) . '/lang' );
