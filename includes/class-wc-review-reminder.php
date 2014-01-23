@@ -36,7 +36,10 @@ class WC_Review_Reminder {
 		// Activate plugin when new blog is added
 		add_action( 'wpmu_new_blog', array( $this, 'activate_new_site' ) );
 
+		// Schedule the event when the order is completed.
 		add_action( 'woocommerce_order_status_completed', array( $this, 'remind_review' ), 10, 1 );
+
+		// Trigger the email.
 		add_action( 'woocommerce_review_reminder_new_event', array( $this, 'send_mail' ), 1 );
 	}
 
