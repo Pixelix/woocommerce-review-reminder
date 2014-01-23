@@ -206,7 +206,7 @@ class WC_Review_Reminder {
 	 */
 	protected function get_permalinks_from_order( $order_id ) {
 		global $wpdb;
-		$permalinks = '';
+		$permalinks = '<ul>';
 
 		// Get all order items.
 		$order_item_ids = $wpdb->get_col(
@@ -244,8 +244,10 @@ class WC_Review_Reminder {
 
 		// Creates products links.
 		foreach ( $product_ids as $product_id ) {
-			$permalinks .= get_permalink( $product_id ) . '<br>';
+			$permalinks .= sprintf( '<li><a href="%1$s" target="_blank">%1$s</a></li>', get_permalink( $product_id ) );
 		}
+
+		$permalinks .= '</ul>';
 
 		return $permalinks;
 	}
@@ -262,10 +264,6 @@ class WC_Review_Reminder {
 		wp_schedule_single_event( time() + $interval, 'woocommerce_review_reminder_new_event', array( $order_id ) );
 	}
 
-	public function set_html_content_type() {
-		return 'text/html';
-	}
-
 	/**
 	 * Sends the email notification.
 	 *
@@ -274,20 +272,47 @@ class WC_Review_Reminder {
 	 * @return void
 	 */
 	public function send_mail( $order_id ) {
-		$to = get_post_meta( $order_id, '_billing_email', true );
-		$subject = __( 'Please leave a review', self::get_plugin_slug() );
-		$message =
-			__( 'Hello', self::get_plugin_slug() ) . ', '. get_post_meta( $order_id, '_billing_first_name', true ) . '!<br><br>' .
-			__( 'Thank you for choosing our shop', self::get_plugin_slug() ) . '.<br>' .
-			__( 'We offer you to leave feedback about the purchased product on our website', self::get_plugin_slug() ) . '.<br>' .
-			__( 'It does not take much time, but perhaps help other customers with a choice of', self::get_plugin_slug() ) . '.<br>' .
-			__( 'Thanks in advance', self::get_plugin_slug()) . '!<br><br>' .
-			__( 'You have bought from us is this', self::get_plugin_slug() ) . ':<br>' .
-			$this->get_permalinks_from_order( $order_id );
-		$headers[] = 'From: '. get_option( 'mailer_name' ) .' <'. get_option( 'mailer_email' ) .'>';
+		global $woocommerce;
+		$mailer = $woocommerce->mailer();
+		$order = new WC_Order( $order_id );
 
-		add_filter( 'wp_mail_content_type', array( $this, 'set_html_content_type' ) );
-		wp_mail( $to, $subject, $message, $headers );
-		remove_filter( 'wp_mail_content_type', array( $this, 'set_html_content_type' ) );
+		$subject = apply_filters(
+			'woocommerce_review_reminder_mail_subject',
+			sprintf( __( 'Please leave a review your order %s', self::get_plugin_slug() ), $order->get_order_number() ),
+			$order
+		);
+
+		// Mail headers.
+		$headers = array();
+		$headers[] = "Content-Type: text/html\r\n";
+
+		// Message title.
+		$message_title = apply_filters(
+			'woocommerce_review_reminder_mail_title',
+			__( 'Please leave a review', self::get_plugin_slug() ),
+			$order
+		);
+
+		// Message body.
+		$body = '<p>' . sprintf( __( 'Hello %s %s!', self::get_plugin_slug() ), $order->billing_first_name, $order->billing_last_name ) . '</p>' .
+			'<p>' . __( 'Thank you for choosing our shop.', self::get_plugin_slug() ) . '<br>' .
+			__( 'We will be very happy to receive your feedback on purchased products.', self::get_plugin_slug() ) . '<br>' .
+			__( 'It does not take much time and can still help the other customers choosing the best product.', self::get_plugin_slug() ) . '<br>' .
+			__( 'Thanks in advance!', self::get_plugin_slug() ) . '</p>' .
+			'<p>' . __( 'You have bought from us this products:', self::get_plugin_slug() ) . '</p>' .
+			$this->get_permalinks_from_order( $order_id );
+
+		$message_body = apply_filters(
+			'woocommerce_review_reminder_mail_message',
+			$body,
+			$order,
+			$this->get_permalinks_from_order( $order_id )
+		);
+
+		// Sets the message template.
+		$message = $mailer->wrap_message( $message_title, $message_body );
+
+		// Send the email.
+		$mailer->send( $order->billing_email, $subject, $message, $headers, '' );
 	}
 }
