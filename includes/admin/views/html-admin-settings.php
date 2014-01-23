@@ -16,10 +16,11 @@ if ( ! defined( 'WPINC' ) ) {
 
 	<form method="post" action="options.php">
 		<?php settings_fields( 'wcrr_options' ); ?>
+
 		<table class="form-table">
 			<tr valign="top">
 				<th scope="row">
-					<?php _e( 'Delay of departure of the letter', $this->plugin_slug ); ?>
+					<?php _e( 'Delay for sending the notification', $this->plugin_slug ); ?>
 				</th>
 				<td>
 					<input type="text" name="interval_count" value="<?php echo get_option( 'interval_count' ); ?>" class="input-text regular-text" style="width: 50px;" />
@@ -33,11 +34,12 @@ if ( ! defined( 'WPINC' ) ) {
 						<option value="18144000" <?php selected( '18144000', $interval_type, true ); ?>><?php _e( 'months', $this->plugin_slug ); ?></option>
 					</select>
 					<p class="description">
-						<?php _e( 'A reminder letter will be sent after the specified interval after the execution of the order.', $this->plugin_slug ); ?>
+						<?php _e( 'A reminder email will be sent after the specified interval after the order is completed.', $this->plugin_slug ); ?>
 					</p>
 				</td>
 			</tr>
 		</table>
+
 		<?php submit_button(); ?>
 	</form>
 </div>
