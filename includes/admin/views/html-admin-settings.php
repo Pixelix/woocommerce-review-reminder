@@ -34,7 +34,7 @@ if ( ! defined( 'WPINC' ) ) {
 						<option value="18144000" <?php selected( '18144000', $interval_type, true ); ?>><?php _e( 'months', $this->plugin_slug ); ?></option>
 					</select>
 					<p class="description">
-						<?php _e( 'A reminder email will be sent after the specified interval after the order is completed.', $this->plugin_slug ); ?>
+						<?php _e( 'A reminder email will be sent after the time interval that starts when the order is completed.', $this->plugin_slug ); ?>
 					</p>
 				</td>
 			</tr>
