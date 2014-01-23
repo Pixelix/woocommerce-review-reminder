@@ -166,8 +166,6 @@ class WC_Review_Reminder {
 	 * @return void
 	 */
 	private static function single_activate() {
-		add_option( 'mailer_name', get_bloginfo( 'name' ) );
-		add_option( 'mailer_email', get_bloginfo( 'admin_email' ) );
 		add_option( 'interval_count', '1' );
 		add_option( 'interval_type', '604800' );
 	}
@@ -178,8 +176,8 @@ class WC_Review_Reminder {
 	 * @return void
 	 */
 	private static function single_deactivate() {
-		delete_option( 'mailer_name' );
-		delete_option( 'mailer_email' );
+		delete_option( 'mailer_name' ); // Remove for old versions.
+		delete_option( 'mailer_email' ); // Remove for old versions.
 		delete_option( 'interval_count' );
 		delete_option( 'interval_type' );
 	}

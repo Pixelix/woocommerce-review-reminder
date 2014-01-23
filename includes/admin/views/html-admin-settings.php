@@ -19,28 +19,6 @@ if ( ! defined( 'WPINC' ) ) {
 		<table class="form-table">
 			<tr valign="top">
 				<th scope="row">
-					<?php _e( 'Sender name', $this->plugin_slug ); ?>
-				</th>
-				<td>
-					<input type="text" name="mailer_name" value="<?php echo get_option('mailer_name'); ?>" class="input-text regular-text" />
-					<p class="description">
-						<?php _e( 'The name of the sender will be used in the return address reminder letters.', $this->plugin_slug ); ?>
-					</p>
-				</td>
-			</tr>
-			<tr valign="top">
-				<th scope="row">
-					<?php _e( 'Sender address', $this->plugin_slug ); ?>
-				</th>
-				<td>
-					<input type="text" name="mailer_email" value="<?php echo get_option( 'mailer_email' ); ?>" class="input-text regular-text" />
-					<p class="description">
-						<?php _e( 'E-mail address of the sender of the message reminder.', $this->plugin_slug ); ?>
-					</p>
-				</td>
-			</tr>
-			<tr valign="top">
-				<th scope="row">
 					<?php _e( 'Delay of departure of the letter', $this->plugin_slug ); ?>
 				</th>
 				<td>

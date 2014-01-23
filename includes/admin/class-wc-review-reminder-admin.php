@@ -116,8 +116,6 @@ class WC_Review_Reminder_Admin {
 	 * @return void
 	 */
 	public function register_settings() {
-		register_setting( 'wcrr_options', 'mailer_name' );
-		register_setting( 'wcrr_options', 'mailer_email' );
 		register_setting( 'wcrr_options', 'interval_count' );
 		register_setting( 'wcrr_options', 'interval_type' );
 	}
