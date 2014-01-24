@@ -4,148 +4,140 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WooCommerce Review Reminder 1.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/woocommerce-review-reminder\n"
-"POT-Creation-Date: 2014-01-22 00:43:43+00:00\n"
+"POT-Creation-Date: 2014-01-24 18:35:32+00:00\n"
+"PO-Revision-Date: 2014-01-24 22:49+0400\n"
+"Last-Translator: Apelsinova <anisya@apelsinova.ru>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2014-01-22 04:46+0400\n"
-"Last-Translator: Apelsinova <anisya@apelsinova.ru>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
 "X-Generator: Poedit 1.6.3\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"Language: ru_RU\n"
 
-#: pixelix_wc_reminder_page.php:12
-msgid "Sender name"
-msgstr "Имя отправителя"
+#: includes/admin/class-wc-review-reminder-admin.php:61
+msgid "Settings for the reminder"
+msgstr "Настройки напоминаний об отзывах"
 
-#: pixelix_wc_reminder_page.php:17
+#: includes/admin/class-wc-review-reminder-admin.php:62
+msgid "Review Reminder"
+msgstr "Напоминание об отзывах"
+
+#: includes/admin/class-wc-review-reminder-admin.php:86
+msgid "Configuring plugin"
+msgstr "Настройка плагина"
+
+#: includes/admin/class-wc-review-reminder-admin.php:87
 msgid ""
-"The name of the sender will be used in the return address reminder letters."
+"Fill in the plugin options. If you leave any field blank the notificaçãos "
+"will be sent in a week."
 msgstr ""
-"Имя отправителя будет использовано в качестве обратного адреса для письма с "
-"напоминанием."
+"Вы можете задать свои настройки для плагина. Если время задержки не указано, "
+"напоминания будут отправляться спустя неделю."
 
-#: pixelix_wc_reminder_page.php:23
-msgid "Sender address"
-msgstr "Адрес отправителя"
+#: includes/admin/class-wc-review-reminder-admin.php:94
+msgid "Email standards"
+msgstr "Настройки письма"
 
-#: pixelix_wc_reminder_page.php:28
-msgid "E-mail address of the sender of the message reminder."
-msgstr "E-mail отправителя письма с напоминанием."
+#: includes/admin/class-wc-review-reminder-admin.php:95
+msgid "The WooCommerce email standards will be used to send all notifications."
+msgstr "Для письма будет использованы настройки уведомлений WooCommerce."
 
-#: pixelix_wc_reminder_page.php:34
-msgid "Delay of departure of the letter"
-msgstr "Задержка отправления письма"
+#: includes/admin/class-wc-review-reminder-admin.php:129
+msgid ""
+"<strong>WooCommerce Review Reminder</strong> depends on the last version of "
+"%s to work!"
+msgstr ""
+"Плагину <strong>WooCommerce Review Reminder</strong> требуется последняя "
+"версия %s для корректной работы!"
 
-#: pixelix_wc_reminder_page.php:39
+#: includes/admin/class-wc-review-reminder-admin.php:129
+msgid "WooCommerce"
+msgstr "Магазин"
+
+#: includes/admin/views/html-admin-settings.php:23
+msgid "Delay for sending the notification"
+msgstr "Задержка отправки письма"
+
+#: includes/admin/views/html-admin-settings.php:29
 msgid "seconds"
 msgstr "секунд"
 
-#: pixelix_wc_reminder_page.php:40
+#: includes/admin/views/html-admin-settings.php:30
 msgid "minutes"
 msgstr "минут"
 
-#: pixelix_wc_reminder_page.php:41
+#: includes/admin/views/html-admin-settings.php:31
 msgid "hours"
 msgstr "часов"
 
-#: pixelix_wc_reminder_page.php:42
+#: includes/admin/views/html-admin-settings.php:32
 msgid "days"
 msgstr "дней"
 
-#: pixelix_wc_reminder_page.php:43
+#: includes/admin/views/html-admin-settings.php:33
 msgid "weeks"
 msgstr "недель"
 
-#: pixelix_wc_reminder_page.php:44
+#: includes/admin/views/html-admin-settings.php:34
 msgid "months"
 msgstr "месяцев"
 
-#: pixelix_wc_reminder_page.php:47
+#: includes/admin/views/html-admin-settings.php:37
 msgid ""
-"A reminder letter will be sent after the specified interval after the "
-"execution of the order."
+"A reminder email will be sent after the time interval that starts when the "
+"order is completed."
 msgstr ""
 "Письмо с напоминанием будет отправлено спустя указанный промежуток времени "
 "после выполнения заказа."
 
-#: woocommerce-review-reminder.php:28
-msgid "Configuring plugin"
-msgstr "Настройка плагина"
+#: includes/class-wc-review-reminder.php:287
+msgid "Please leave a review your order %s"
+msgstr "Пожалуйста, оставьте отзыв к заказу %s"
 
-#: woocommerce-review-reminder.php:29
-msgid ""
-"You can ask your plugin settings. If any of the fields will be empty, the "
-"default value is used."
-msgstr ""
-"Вы можете задать свои настройки для плагина. Если какие-то поля останутся "
-"пустыми, подставится значение по умолчанию."
-
-#: woocommerce-review-reminder.php:33
-msgid "Unspecified values"
-msgstr "Неуказанные значения"
-
-#: woocommerce-review-reminder.php:34
-msgid ""
-"As the address and name of the recipient takes all the data, which the buyer "
-"indicated in the payment order information."
-msgstr ""
-"Адрес и имя получателя письма берутся из платёжных данных, которые ввёл "
-"покупатель при регистрации заказа."
-
-#: woocommerce-review-reminder.php:37
-msgid "Here will be useful links."
-msgstr "Здесь будут полезные ссылки."
-
-#: woocommerce-review-reminder.php:46
-msgid "Settings for the reminder"
-msgstr "Настройки напоминаний об отзывах"
-
-#: woocommerce-review-reminder.php:46
-msgid "Review Reminder"
-msgstr "Напоминание об отзывах"
-
-#: woocommerce-review-reminder.php:116
+#: includes/class-wc-review-reminder.php:298
 msgid "Please leave a review"
 msgstr "Оставьте, пожалуйста, отзыв"
 
-#: woocommerce-review-reminder.php:118
-msgid "Hello"
-msgstr "Здравствуйте"
+#: includes/class-wc-review-reminder.php:314
+msgid "Hello%s%s!"
+msgstr "Здравствуйте%s%s!"
 
-#: woocommerce-review-reminder.php:119
-msgid "Thank you for choosing our shop"
-msgstr "Спасибо за то, что выбрали наш магазин"
+#: includes/class-wc-review-reminder.php:315
+msgid "Thank you for choosing our shop."
+msgstr "Спасибо за то, что выбрали наш магазин."
 
-#: woocommerce-review-reminder.php:120
+#: includes/class-wc-review-reminder.php:316
+msgid "We will be very happy to receive your feedback on purchased products."
+msgstr "Мы были бы очень рады получить ваш отзыв о товарах."
+
+#: includes/class-wc-review-reminder.php:317
 msgid ""
-"We offer you to leave feedback about the purchased product on our website"
-msgstr "Предлагаем Вам оставить отзыв о приобретенном товаре на нашем сайте"
-
-#: woocommerce-review-reminder.php:121
-msgid ""
-"It does not take much time, but perhaps help other customers with a choice of"
+"It does not take much time and can still help the other customers choosing "
+"the best product."
 msgstr ""
-"Это не займет много времени, но, возможно, поможет другим покупателям с "
-"выбором"
+"Это не займёт много времени, зато поможет другим покупателям с выбором."
 
-#: woocommerce-review-reminder.php:122
-msgid "Thanks in advance"
-msgstr "Заранее спасибо"
+#: includes/class-wc-review-reminder.php:318
+msgid "Thanks in advance!"
+msgstr "Заранее спасибо!"
 
-#: woocommerce-review-reminder.php:123
-msgid "You have bought from us is this"
-msgstr "Вот что вы у нас купили"
+#: includes/class-wc-review-reminder.php:319
+msgid "You have bought from us this products:"
+msgstr "Вот что вы у нас купили:"
 
 #. Plugin Name of the plugin/theme
 msgid "WooCommerce Review Reminder"
 msgstr "Напоминание об отзывах"
 
+#. Plugin URI of the plugin/theme
+msgid "http://wordpress.org/plugins/woocommerce-review-reminder/"
+msgstr "http://wordpress.org/plugins/woocommerce-review-reminder/"
+
 #. Description of the plugin/theme
-msgid "Reminder to leave feedback about a purchase."
-msgstr "Предлагаем Вам оставить отзыв о приобретенном товаре на нашем сайте"
+msgid "Remind the customer to leave a feedback about a purchase."
+msgstr "Напоминает покупателям оставить отзыв о купленных товарах."
 
 #. Author of the plugin/theme
 msgid "Pixelix"
@@ -154,3 +146,42 @@ msgstr "Пикселикс"
 #. Author URI of the plugin/theme
 msgid "http://pixelix.ru"
 msgstr "http://pixelix.ru"
+
+#~ msgid "Sender name"
+#~ msgstr "Имя отправителя"
+
+#~ msgid ""
+#~ "The name of the sender will be used in the return address reminder "
+#~ "letters."
+#~ msgstr ""
+#~ "Имя отправителя будет использовано в качестве обратного адреса для письма "
+#~ "с напоминанием."
+
+#~ msgid "Sender address"
+#~ msgstr "Адрес отправителя"
+
+#~ msgid "E-mail address of the sender of the message reminder."
+#~ msgstr "E-mail отправителя письма с напоминанием."
+
+#~ msgid "Delay of departure of the letter"
+#~ msgstr "Задержка отправления письма"
+
+#~ msgid ""
+#~ "You can ask your plugin settings. If any of the fields will be empty, the "
+#~ "default value is used."
+#~ msgstr ""
+#~ "Вы можете задать свои настройки для плагина. Если какие-то поля останутся "
+#~ "пустыми, подставится значение по умолчанию."
+
+#~ msgid "Unspecified values"
+#~ msgstr "Неуказанные значения"
+
+#~ msgid ""
+#~ "As the address and name of the recipient takes all the data, which the "
+#~ "buyer indicated in the payment order information."
+#~ msgstr ""
+#~ "Адрес и имя получателя письма берутся из платёжных данных, которые ввёл "
+#~ "покупатель при регистрации заказа."
+
+#~ msgid "Here will be useful links."
+#~ msgstr "Здесь будут полезные ссылки."
