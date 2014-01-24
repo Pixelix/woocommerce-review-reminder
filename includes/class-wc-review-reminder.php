@@ -261,8 +261,10 @@ class WC_Review_Reminder {
 	 * @return void
 	 */
 	public function remind_review( $order_id ) {
-		$interval_type  = ! empty( get_option( 'interval_type' ) ) ? get_option( 'interval_type' ) : 1;
-		$interval_count = ! empty( get_option( 'interval_count' ) ) ? get_option( 'interval_count' ) : 604800;
+		$interval_type = get_option( 'interval_type' );
+		$interval_type  = ! empty( $interval_type ) ? get_option( 'interval_type' ) : 1;
+		$interval_count = get_option( 'interval_count' );
+		$interval_count = ! empty( $interval_count ) ? get_option( 'interval_count' ) : 604800;
 		$interval       = time() + ( $interval_type * $interval_count );
 
 		wp_schedule_single_event( $interval, 'woocommerce_review_reminder_new_event', array( $order_id ) );
