@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WooCommerce Review Reminder v1.1\n"
+"Project-Id-Version: WooCommerce Review Reminder v2.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2014-01-23 04:03:59+0000\n"
+"PO-Revision-Date: 2014-01-24 02:01:07+0000\n"
 "Last-Translator: Claudio Sanches <contato@claudiosmweb.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -150,12 +150,6 @@ msgstr "WooCommerce Lembre de Avaliação"
 msgid "http://wordpress.org/plugins/woocommerce-review-reminder/"
 msgstr "http://wordpress.org/plugins/woocommerce-review-reminder/"
 
-#. translators: plugin header field 'Description'
-#: woocommerce-review-reminder.php:0
-#@ woocommerce-review-reminder
-msgid "Reminder to leave feedback about a purchase."
-msgstr "Lembrete para deixar avaliações sobre uma compra."
-
 #. translators: plugin header field 'Author'
 #: woocommerce-review-reminder.php:0
 #@ woocommerce-review-reminder
@@ -168,14 +162,20 @@ msgstr "Pixelix"
 msgid "http://pixelix.ru"
 msgstr "http://pixelix.ru"
 
-#. translators: plugin header field 'Version'
-#: woocommerce-review-reminder.php:0
-#@ woocommerce-review-reminder
-msgid "1.1"
-msgstr "1.1"
-
 #: includes/admin/views/html-admin-settings.php:37
 #@ woocommerce-review-reminder
 msgid "A reminder email will be sent after the time interval that starts when the order is completed."
 msgstr "Um e-mail de lembrete será enviado depois do intervalo de tempo que é iniciado quando o pedido é concluído."
+
+#. translators: plugin header field 'Version'
+#: woocommerce-review-reminder.php:0
+#@ woocommerce-review-reminder
+msgid "2.0"
+msgstr "2.0"
+
+#. translators: plugin header field 'Description'
+#: woocommerce-review-reminder.php:0
+#@ woocommerce-review-reminder
+msgid "Remind the customer to leave a feedback about a purchase."
+msgstr "Lembra o cliente de deixar uma avaliação sobre a compra."
 
