@@ -1,181 +1,184 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WooCommerce Review Reminder v2.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: 2014-01-24 02:01:07+0000\n"
-"Last-Translator: Claudio Sanches <contato@claudiosmweb.com>\n"
-"Language-Team: \n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/woocommerce-review-reminder\n"
+"POT-Creation-Date: 2014-01-24 18:35:32+00:00\n"
+"PO-Revision-Date: 2014-01-24 22:55+0400\n"
+"Last-Translator: Apelsinova <anisya@apelsinova.ru>\n"
+"Language-Team: Claudio Sanches <contato@claudiosmweb.com>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: CSL v1.x\n"
-"X-Poedit-Language: Portuguese\n"
-"X-Poedit-Country: BRAZIL\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 1.6.3\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
 "X-Poedit-Basepath: ../\n"
-"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: .\n"
-"X-Textdomain-Support: yes"
 
+# @ woocommerce-review-reminder
 #: includes/admin/class-wc-review-reminder-admin.php:61
-#@ woocommerce-review-reminder
 msgid "Settings for the reminder"
 msgstr "Opções do lembrete"
 
+# @ woocommerce-review-reminder
 #: includes/admin/class-wc-review-reminder-admin.php:62
-#@ woocommerce-review-reminder
 msgid "Review Reminder"
 msgstr "Lembrete de avaliação"
 
+# @ woocommerce-review-reminder
 #: includes/admin/class-wc-review-reminder-admin.php:86
-#@ woocommerce-review-reminder
 msgid "Configuring plugin"
 msgstr "Configurando o plugin"
 
+# @ woocommerce-review-reminder
 #: includes/admin/class-wc-review-reminder-admin.php:87
-#@ woocommerce-review-reminder
-msgid "Fill in the plugin options. If you leave any field blank the notificaçãos will be sent in a week."
-msgstr "Preencha as opções do plugin. Caso você deixe algo em branco as notificações serão enviadas em uma semana."
+msgid ""
+"Fill in the plugin options. If you leave any field blank the notificaçãos "
+"will be sent in a week."
+msgstr ""
+"Preencha as opções do plugin. Caso você deixe algo em branco as notificações "
+"serão enviadas em uma semana."
 
+# @ woocommerce-review-reminder
 #: includes/admin/class-wc-review-reminder-admin.php:94
-#@ woocommerce-review-reminder
 msgid "Email standards"
 msgstr "Padrões do e-mail"
 
+# @ woocommerce-review-reminder
 #: includes/admin/class-wc-review-reminder-admin.php:95
-#@ woocommerce-review-reminder
 msgid "The WooCommerce email standards will be used to send all notifications."
-msgstr "Será utilizados os e-mails padrões do WooCommerce para enviar todas as notificações."
+msgstr ""
+"Será utilizados os e-mails padrões do WooCommerce para enviar todas as "
+"notificações."
 
+# @ woocommerce-review-reminder
 #: includes/admin/class-wc-review-reminder-admin.php:129
-#, php-format
-#@ woocommerce-review-reminder
-msgid "<strong>WooCommerce Review Reminder</strong> depends on the last version of %s to work!"
-msgstr "<strong>WooCommerce Lembrete de Avalição</strong> depende da última versão do %s para funcionar!"
+msgid ""
+"<strong>WooCommerce Review Reminder</strong> depends on the last version of "
+"%s to work!"
+msgstr ""
+"<strong>WooCommerce Lembrete de Avalição</strong> depende da última versão "
+"do %s para funcionar!"
 
+# @ woocommerce-review-reminder
 #: includes/admin/class-wc-review-reminder-admin.php:129
-#@ woocommerce-review-reminder
 msgid "WooCommerce"
 msgstr "WooCommerce"
 
+# @ woocommerce-review-reminder
 #: includes/admin/views/html-admin-settings.php:23
-#@ woocommerce-review-reminder
 msgid "Delay for sending the notification"
 msgstr "Intervalo de tempo para enviar a notificação"
 
+# @ woocommerce-review-reminder
 #: includes/admin/views/html-admin-settings.php:29
-#@ woocommerce-review-reminder
 msgid "seconds"
 msgstr "segundos"
 
+# @ woocommerce-review-reminder
 #: includes/admin/views/html-admin-settings.php:30
-#@ woocommerce-review-reminder
 msgid "minutes"
 msgstr "minutos"
 
+# @ woocommerce-review-reminder
 #: includes/admin/views/html-admin-settings.php:31
-#@ woocommerce-review-reminder
 msgid "hours"
 msgstr "horas"
 
+# @ woocommerce-review-reminder
 #: includes/admin/views/html-admin-settings.php:32
-#@ woocommerce-review-reminder
 msgid "days"
 msgstr "dias"
 
+# @ woocommerce-review-reminder
 #: includes/admin/views/html-admin-settings.php:33
-#@ woocommerce-review-reminder
 msgid "weeks"
 msgstr "semanas"
 
+# @ woocommerce-review-reminder
 #: includes/admin/views/html-admin-settings.php:34
-#@ woocommerce-review-reminder
 msgid "months"
 msgstr "meses"
 
-#: includes/class-wc-review-reminder.php:285
-#, php-format
-#@ woocommerce-review-reminder
+# @ woocommerce-review-reminder
+#: includes/admin/views/html-admin-settings.php:37
+msgid ""
+"A reminder email will be sent after the time interval that starts when the "
+"order is completed."
+msgstr ""
+"Um e-mail de lembrete será enviado depois do intervalo de tempo que é "
+"iniciado quando o pedido é concluído."
+
+# @ woocommerce-review-reminder
+#: includes/class-wc-review-reminder.php:287
 msgid "Please leave a review your order %s"
 msgstr "Por favor, faça uma avaliação do seu pedido %s"
 
-#: includes/class-wc-review-reminder.php:296
-#@ woocommerce-review-reminder
+# @ woocommerce-review-reminder
+#: includes/class-wc-review-reminder.php:298
 msgid "Please leave a review"
 msgstr "Por favor, faça uma avaliação"
 
-#: includes/class-wc-review-reminder.php:301
-#, php-format
-#@ woocommerce-review-reminder
-msgid "Hello %s %s!"
-msgstr "Olá %s %s!"
+# @ woocommerce-review-reminder
+#: includes/class-wc-review-reminder.php:314
+msgid "Hello%s%s!"
+msgstr "Olá%s%s!"
 
-#: includes/class-wc-review-reminder.php:302
-#@ woocommerce-review-reminder
+# @ woocommerce-review-reminder
+#: includes/class-wc-review-reminder.php:315
 msgid "Thank you for choosing our shop."
 msgstr "Obrigado por escolher nossa loja."
 
-#: includes/class-wc-review-reminder.php:303
-#@ woocommerce-review-reminder
+# @ woocommerce-review-reminder
+#: includes/class-wc-review-reminder.php:316
 msgid "We will be very happy to receive your feedback on purchased products."
-msgstr "Ficaremos muito felizes em receber seu feedback sobre os produtos adquiridos."
+msgstr ""
+"Ficaremos muito felizes em receber seu feedback sobre os produtos adquiridos."
 
-#: includes/class-wc-review-reminder.php:304
-#@ woocommerce-review-reminder
-msgid "It does not take much time and can still help the other customers choosing the best product."
-msgstr "Isto não leva muito tempo e ainda pode ajudar outros clientes escolher o melhor produto."
+# @ woocommerce-review-reminder
+#: includes/class-wc-review-reminder.php:317
+msgid ""
+"It does not take much time and can still help the other customers choosing "
+"the best product."
+msgstr ""
+"Isto não leva muito tempo e ainda pode ajudar outros clientes escolher o "
+"melhor produto."
 
-#: includes/class-wc-review-reminder.php:305
-#@ woocommerce-review-reminder
+# @ woocommerce-review-reminder
+#: includes/class-wc-review-reminder.php:318
 msgid "Thanks in advance!"
 msgstr "Agradecemos antecipadamente!"
 
-#: includes/class-wc-review-reminder.php:306
-#@ woocommerce-review-reminder
+# @ woocommerce-review-reminder
+#: includes/class-wc-review-reminder.php:319
 msgid "You have bought from us this products:"
 msgstr "Você comprou de nós este produtos:"
 
-#. translators: plugin header field 'Name'
-#: woocommerce-review-reminder.php:0
-#@ woocommerce-review-reminder
+# @ woocommerce-review-reminder
+#. Plugin Name of the plugin/theme
 msgid "WooCommerce Review Reminder"
 msgstr "WooCommerce Lembre de Avaliação"
 
-#. translators: plugin header field 'PluginURI'
-#: woocommerce-review-reminder.php:0
-#@ woocommerce-review-reminder
+# @ woocommerce-review-reminder
+#. Plugin URI of the plugin/theme
 msgid "http://wordpress.org/plugins/woocommerce-review-reminder/"
 msgstr "http://wordpress.org/plugins/woocommerce-review-reminder/"
 
-#. translators: plugin header field 'Author'
-#: woocommerce-review-reminder.php:0
-#@ woocommerce-review-reminder
-msgid "Pixelix"
-msgstr "Pixelix"
-
-#. translators: plugin header field 'AuthorURI'
-#: woocommerce-review-reminder.php:0
-#@ woocommerce-review-reminder
-msgid "http://pixelix.ru"
-msgstr "http://pixelix.ru"
-
-#: includes/admin/views/html-admin-settings.php:37
-#@ woocommerce-review-reminder
-msgid "A reminder email will be sent after the time interval that starts when the order is completed."
-msgstr "Um e-mail de lembrete será enviado depois do intervalo de tempo que é iniciado quando o pedido é concluído."
-
-#. translators: plugin header field 'Version'
-#: woocommerce-review-reminder.php:0
-#@ woocommerce-review-reminder
-msgid "2.0"
-msgstr "2.0"
-
-#. translators: plugin header field 'Description'
-#: woocommerce-review-reminder.php:0
-#@ woocommerce-review-reminder
+# @ woocommerce-review-reminder
+#. Description of the plugin/theme
 msgid "Remind the customer to leave a feedback about a purchase."
 msgstr "Lembra o cliente de deixar uma avaliação sobre a compra."
 
+# @ woocommerce-review-reminder
+#. Author of the plugin/theme
+msgid "Pixelix"
+msgstr "Pixelix"
+
+# @ woocommerce-review-reminder
+#. Author URI of the plugin/theme
+msgid "http://pixelix.ru"
+msgstr "http://pixelix.ru"
