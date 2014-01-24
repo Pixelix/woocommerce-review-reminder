@@ -300,7 +300,18 @@ class WC_Review_Reminder {
 		);
 
 		// Message body.
-		$body = '<p>' . sprintf( __( 'Hello %s %s!', self::get_plugin_slug() ), $order->billing_first_name, $order->billing_last_name ) . '</p>' .
+		if ($order->billing_first_name){
+			$first_name = ', '.$order->billing_first_name;
+			if ($order->billing_last_name){
+				$last_name = ' '.$order->billing_last_name;
+			}
+		}
+		else{
+			if ($order->billing_last_name){
+				$last_name = ', '.$order->billing_last_name;
+			}
+		}
+		$body = '<p>' . sprintf( __( 'Hello%s%s!', self::get_plugin_slug() ), $first_name,  $last_name) . '</p>' .
 			'<p>' . __( 'Thank you for choosing our shop.', self::get_plugin_slug() ) . '<br>' .
 			__( 'We will be very happy to receive your feedback on purchased products.', self::get_plugin_slug() ) . '<br>' .
 			__( 'It does not take much time and can still help the other customers choosing the best product.', self::get_plugin_slug() ) . '<br>' .
