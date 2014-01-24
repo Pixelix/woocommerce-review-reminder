@@ -281,7 +281,7 @@ class WC_Review_Reminder {
 		$order = new WC_Order( $order_id );
 
 		$subject = apply_filters(
-			'woocommerce_review_reminder_mail_subject',
+			'woocommerce_review_reminder_email_subject',
 			sprintf( __( 'Please leave a review your order %s', self::get_plugin_slug() ), $order->get_order_number() ),
 			$order
 		);
@@ -292,7 +292,7 @@ class WC_Review_Reminder {
 
 		// Message title.
 		$message_title = apply_filters(
-			'woocommerce_review_reminder_mail_title',
+			'woocommerce_review_reminder_email_title',
 			__( 'Please leave a review', self::get_plugin_slug() ),
 			$order
 		);
@@ -307,7 +307,7 @@ class WC_Review_Reminder {
 			$this->get_permalinks_from_order( $order_id );
 
 		$message_body = apply_filters(
-			'woocommerce_review_reminder_mail_message',
+			'woocommerce_review_reminder_email_message',
 			$body,
 			$order,
 			$this->get_permalinks_from_order( $order_id )
