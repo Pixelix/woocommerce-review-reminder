@@ -98,6 +98,11 @@ You can change the email content using the filters:
 
 	add_filter( 'woocommerce_review_reminder_email_message', 'my_wc_review_reminder_email_message', 1, 3 );
 
+== Screenshots ==
+
+1. Plugin settings.
+2. Example of the reminder.
+
 == Changelog ==
 
 = 2.0 =
