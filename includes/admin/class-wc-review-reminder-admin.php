@@ -84,7 +84,7 @@ class WC_Review_Reminder_Admin {
 			array(
 				'id'      => 'wcrr_configuring_help_tab',
 				'title'   => __( 'Configuring plugin', $this->plugin_slug ),
-				'content' => '<p>' . __( 'Fill in the plugin options. If you leave any field blank the notificaçãos will be sent in a week.', $this->plugin_slug  ) . '</p>',
+				'content' => '<p>' . __( 'Fill in the plugin options. If you leave any field blank the notification will be sent in a week.', $this->plugin_slug  ) . '</p>',
 			)
 		);
 
