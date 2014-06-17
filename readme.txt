@@ -1,7 +1,7 @@
 === WooCommerce Review Reminder ===
 Contributors: Pixelix
 Tags: woocommerce, review, reminder, email, напоминание, отзыв
-Stable tag: 2.0.1
+Stable tag: 2.0.2
 Requires at least: 3.5
 Tested up to: 3.8
 License: GPLv2 or later

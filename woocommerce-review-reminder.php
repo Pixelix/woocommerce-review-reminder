@@ -3,7 +3,7 @@
  * Plugin Name: WooCommerce Review Reminder
  * Plugin URI: http://wordpress.org/plugins/woocommerce-review-reminder/
  * Description: Remind the customer to leave a feedback about a purchase.
- * Version: 2.0.1
+ * Version: 2.0.2
  * Author: Pixelix
  * Author URI: http://pixelix.ru
  * License: GPLv2
