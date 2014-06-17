@@ -3,7 +3,7 @@ Contributors: Pixelix
 Tags: woocommerce, review, reminder, email, напоминание, отзыв
 Stable tag: 2.0.2
 Requires at least: 3.5
-Tested up to: 3.8
+Tested up to: 3.9.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,6 +12,8 @@ Remind the customer to leave a feedback about a purchase.
 == Description ==
 
 A week later after the order is marked as complete, the customer receives a reminder to leave feedback about a purchase.
+
+Thanks Claudio Sanches for help! You're awesome!
 
 == Installation ==
 
